@@ -1,0 +1,149 @@
+
+
+@font-face {
+    font-family: "futura";
+    src: url(../font/futura_round-webfont.woff2);
+  }
+
+  h1{
+    font-family: "futura";
+    font-size: 40px;
+    text-align: center;
+  }
+
+  h2{
+    font-family: "futura";
+    font-size: 28px;
+    font-style: bold;
+  }
+
+  p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+.udsolgt{
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    height: 34px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    top: 115px;
+    left: 20px;
+    border-radius: 25px;
+}
+
+.tilbud{
+    text-decoration: line-through;
+}
+
+label,
+input,
+textarea,
+select,
+button {
+  display: block;
+}
+
+.card img{
+    height: auto;
+    width: 100%;
+    border: solid 1px black;
+}
+
+.card{
+    text-align: center;
+    line-height: 1.4;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 4px;
+    font-family: "futura";
+    text-transform: uppercase;
+}
+
+a:hover{
+color: blue;
+}
+
+nav {
+    padding: 0;
+    font-size: 20px;
+    font-family: "futura";
+    font-weight: bold;
+    opacity: 0.8;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 0;
+    background-color: aliceblue;
+}
+
+.kategori{
+font-size: 24px;
+background-color: aliceblue;
+margin: 10px;
+padding: 20px;
+text-align: center;
+letter-spacing: 3px;
+}
+
+dl{
+    /* background-color: rgb(232, 232, 232);
+    width: 600px; */
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+select{
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 25px;
+    padding: 0 15px;
+    height: 30px;
+    margin: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+button{
+    background-color: white;
+    border: solid 1px blue;
+    border-radius: 25px;
+    padding: 0 15px;
+    height: 30px;
+    width: 200px;
+    margin: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+button:hover{
+   background-color: aliceblue;
+}
+
+label{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+hr{
+    border-top: 0.5px solid rgb(240, 240, 240);
+    
+}
+
+.produkt{
+    border: 0.5px solid black;
+    height: auto;
+    width: auto;
+}
