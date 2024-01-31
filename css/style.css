@@ -96,6 +96,12 @@ margin: 10px;
 padding: 20px;
 text-align: center;
 letter-spacing: 3px;
+cursor: pointer;
+}
+
+.kategori:hover{
+background-color: rgb(200, 221, 240);
+a{color: blue;}
 }
 
 dl{
