@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css">
+
     <title>Produktliste</title>
 </head>
-<body>
-    <header></header>
-    <main>
-        <h1>Produktliste <!-- sko --></h1>
-        <section class="grid_1-1-1-1">
-            <div class="card">
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="t-shirt">
-                <a href="produkt.html">Sahara Team India Fanwear Round Neck Jersey</a>
-                <p>895 kr</p>
-                <span class="udsolgt">Udsolgt</span>
-            </div>
-            <div class="card">
+<body class="productlist">
+    <header><h1>Produktliste</h1></header>
+    <main class="grid_1-1-1-1">
+        <template id="smallProductTemplate">
+            <article class="card">
+                <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"alt="t-shirt">
+ <a href="produkt.html">Sahara Team India Fanwear Round Neck Jersey</a>
+                <p>Før <span></span> kr</p>
+                
+<!--                 <p><span style="text-decoration: line-through;">1299 kr</span> 799 kr</p>
+ -->
+        </article>
+        </template>
+   <!--          <div class="card">
                 <img src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="t-shirt">
                 <a href="produkt.html">Blue T20 Indian Cricket Jersey</a>
                 <p>1595 kr</p>
@@ -62,9 +65,10 @@
                 <img src="https://kea-alt-del.dk/t7/images/webp/640/1532.webp" alt="t-shirt">
                 <a href="produkt.html"></a>Grey Leaping Cat T-shirt</h2>
                 <p>899 kr</p>
-            </div>
-        </section>
+            </div> -->
     </main>
+    <script src="js/product.js"></script>
+    <script src="js/productlist.js"></script>
     <footer></footer>
 </body>
 </html>
