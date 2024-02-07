@@ -1,55 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Produkt</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Logo</h1>
-        <nav class="flex">
-            <ol><a href="kategori.html">Kategori</a></ol>
-            <ol><a href="produktliste.html">Produktliste</a></ol>
-            <ol><a href="produkt.html">Produkt</a></ol>
-        </nav>
+      <h1>Logo</h1>
+      <nav class="flex">
+        <ol>
+          <a href="kategori.html">Kategori</a>
+        </ol>
+        <ol>
+          <a href="produktliste.html">Produktliste</a>
+        </ol>
+        <ol>
+          <a href="produkt.html">Produkt</a>
+        </ol>
+      </nav>
     </header>
-    <main>
-        <section class="grid_1-1">
-            <template>
-            <div>
-            <img class="produkt" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="Produktbeskrivelse">
-        </div>
-        <div class="purchaseBox">
+    <main class="grid_1-1">
+        <template id="singleProduct">
+          <div>
+            <img
+              class="produkt"
+              src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
+              alt="Produktbeskrivelse"
+            />
+          </div>
+          <div class="purchaseBox">
             <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
-            <p class="pris">895,00 kr</p>
+            <p class="pris"><span></span> kr</p>
             <form>
-                <label>Size
+              <label
+                >Size
                 <select name="liste">
-                    <option value="xs">x-small</option>
-                    <option value="s">small</option>
-                    <option value="m">medium</option>
-                    <option value="l">large</option>
+                  <option value="xs">x-small</option>
+                  <option value="s">small</option>
+                  <option value="m">medium</option>
+                  <option value="l">large</option>
                 </select>
-            </label>
+              </label>
             </form>
             <button>Add to cart</button>
-            <hr>
-            <h3>Description</h3>
+            <hr />
+            <h4>Description</h4>
             <dl>
-                <dt>Color:</dt>
-                <dd>Blue</dd>
-                <dt>Brand:</dt>
-                <dd>Nike</dd>
+              <dt>Category:</dt>
+              <dd class="vare">T-shirt</dd>
+              <dt>Brand:</dt>
+              <dd class="brand">Nike</dd>
             </dl>
-        </div>
-    </template>
-        </section>
-        <script src="js/product.js"></script>
-        <script src="js/productlist.js"></script>
+          </div>
+        </template>
+      <script src="js/product.js"></script>
     </main>
     <footer></footer>
-</body>
+  </body>
 </html>

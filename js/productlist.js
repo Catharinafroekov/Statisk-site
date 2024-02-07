@@ -1,5 +1,7 @@
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("category");
 
-fetch("https://kea-alt-del.dk/t7/api/products?limit=10")
+fetch("https://kea-alt-del.dk/t7/api/products?category=" + category)
 .then((res)=> res.json())
 .then(showProducts);
 
@@ -30,8 +32,8 @@ if (product.id) {
     copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 }
 
-/* copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
- */
+copy.querySelector("a").href = `produkt.html?id=${product.id}`;
+
 //append
 document.querySelector("main").appendChild(copy);
 }
